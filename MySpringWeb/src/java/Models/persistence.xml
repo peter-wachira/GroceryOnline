@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+                version="1.0">
+    
+    <persistence-unit name="customerPersistenceUnit" transaction-type="JTA" >
+        <class>Models.Customer</class>
+        <class>Models.Models.Orders</class>
+       
+    </persistence-unit> 
+    
+   
+    <persistence-unit name="categoryPersistenceUnit" transaction-type="JTA">
+        <class>Models.Category</class>
+        <class>Models.SubCategory</class>
+    </persistence-unit>
+    
+</persistence>
